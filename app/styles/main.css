@@ -1,4 +1,19 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300&subset=latin,cyrillic);
+/* font-family: "FregatRegular"; */
+@font-face {
+  font-family: "FregatRegular";
+  src: url("../fonts/FregatRegular/FregatRegular.eot");
+  src: url("../fonts/FregatRegular/FregatRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/FregatRegular/FregatRegular.woff") format("woff"), url("../fonts/FregatRegular/FregatRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+/* font-family: "FregatBold"; */
+@font-face {
+  font-family: "FregatBold";
+  src: url("../fonts/FregatBold/FregatBold.eot");
+  src: url("../fonts/FregatBold/FregatBold.eot?#iefix") format("embedded-opentype"), url("../fonts/FregatBold/FregatBold.woff") format("woff"), url("../fonts/FregatBold/FregatBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
 /* gradient */
 /* opacity */
 /* box shadow */
