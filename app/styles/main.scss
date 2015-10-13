@@ -22,6 +22,7 @@
 // Styles
 // ------------------------------------
 
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap";
 
 $use-flexbox:               false!default;
 $use-adaprive:              false!default;
@@ -49,10 +50,10 @@ $use-adaprive:              false!default;
 //@import "utils/_utilities";
 
 // Base
-@import "base/_glob";
+//@import "base/_glob";
 
 // Components
-@import "components/_glob";
+//@import "components/_glob";
 
 // Layout
 @import "layout/glob";
