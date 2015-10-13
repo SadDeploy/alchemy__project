@@ -1,0 +1,17 @@
+extends layouts/_default
+
+block content
+  - var title = { description: 'Заголовок' }
+  include modules/_breadcrumbs
+  #main.container
+      .content
+          .text-center
+              h2 Благодарим за регистрацию!
+              p Чтобы воспользоваться личным кабинетом Вам необходимо активировать вашу учетную
+                  br
+                  | запись. Письмо с инструкцией по активации уже отправлено на указанный Вами электронный ящик.
+                  br
+                  | Получите письмо и следуйте инструкции
+      .clearfix
+      
+    p= index.footer
