@@ -1,0 +1,87 @@
+extends layouts/_default
+
+block content
+
+    - var title = { description: 'Текстовые места: Место 1' }
+
+    include modules/_header
+    include modules/_breadcrumbs
+    #main
+        .text-right
+            ul.list-inline
+                li
+                    a(href="#").btn.btn-lilac
+                        i.fa.fa-sitemap
+                        |  Список
+                li
+                li
+                    a(href="#").btn.btn-primary
+                        i.fa.fa-sitemap
+                        |  Права
+                li
+                    a(href="#").btn.btn-success
+                        i.fa.fa-user-plus
+                        |  Добавить
+                li
+                    a(href="#").btn.btn-danger
+                        i.fa.fa-user-times
+                        |  Удалить
+        .col-xs-12
+            form
+                table.table.table-striped
+                    thead
+                        tr
+                            th &nbsp;
+                            th Редактировать
+                    tbody
+                        tr
+                            td Название
+                            td
+                                input.form-control(type="text")
+                        tr
+                            td Псевдоним
+                            td
+                                input.form-control(type="text")
+                        tr
+                            td Использовать в карте сайта
+                            td
+                                input.form-control.form-control-third(type="text")
+                        tr
+                            td Опубликовано
+                            td Главная  / Текстовые места / Место 1 / Редактировать
+                        tr
+                            td Родительская страница
+                            td Главная  / Текстовые места / Место 1 / Редактировать
+                        tr
+                            td Опубликовано
+                            td
+                                .checkbox
+                                    input(type="checkbox", id="check1")
+                                    label(for="check1") &nbsp;
+                        tr
+                            td Опубликовано
+                            td
+                                .checkbox
+                                    input(type="checkbox", id="check2")
+                                    label(for="check2") &nbsp;
+                        tr
+                            td Опубликовано
+                            td
+                                img.img-responsive(src="images/panel.jpg", alt="panel")
+                    tfoot
+                        tr
+                            td &nbsp;
+                            td
+                                button.btn.btn-success
+                                    i.fa.fa-floppy-o
+                                    |  Сохранить
+                                button.btn.btn-primary
+                                    i.fa.fa-check-circle-o
+                                    |  Применить
+                                button.btn.btn-default
+                                    i.fa.fa-times-circle-o
+                                    |  Отмена
+        .clearfix
+
+    //p= index.footer
+    include modules/_footer

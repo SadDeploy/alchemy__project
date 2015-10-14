@@ -1,3 +1,39 @@
 //
 // Pages -> Home
 // ------------------------------------
+
+.middle-block {
+  width: 50%;
+  vertical-align: middle;
+  display: inline-block;
+  margin-right: -4px;
+}
+.align-top {
+  vertical-align: top;
+}
+//.fa {
+//  margin-right: 9px;
+//}
+table {
+  .sorting {
+    cursor: pointer;
+    background: url('../images/sort_both.png') no-repeat top 10px right 5px;
+  }
+  .sorting_asc {
+    background: url('../images/sort_asc.png') no-repeat top 10px right 5px;
+  }
+  .sorting_desc {
+    background: url('../images/sort_desc.png') no-repeat top 10px right 5px;
+  }
+}
+.panel {
+  display: block;
+  font-size: $font-size-h4;
+  padding: 55px 15px 17px;
+  height: 225px;
+  p{margin: 0;}
+  &:hover,&:focus {text-decoration: none;}
+}
+.panel-unlink {padding: 20px;}
+
+.form-control-third {width: 33%;}

@@ -1,7 +1,17 @@
 header.padtop20.padbot20
     .col-xs-6.text-left
-        a(href="#") orange.spb.ru
+        a(href="#").sidebar-toggler.margright20.text-info
+            i.fa.fa-bars.fa-lg
+        a(href="#")
+            img(src="favicon.ico", alt="#")
+            | &nbsp;
+            b orange.spb.ru
     .col-xs-6.text-right
-        a(href="#").margright30 Пользователь: Иванов Петр (администратор)
-        a(href="#") Выход
+        a(href="#").margright30
+            i.fa.fa-user.fa-lg.text-info  &nbsp;
+            span.text-info Пользователь:
+            |  Иванов Петр (администратор)
+        a(href="#").text-info
+            i.fa.fa-sign-out.fa-lg &nbsp;
+            | Выход
     .clearfix

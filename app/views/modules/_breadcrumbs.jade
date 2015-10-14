@@ -1,6 +1,12 @@
 .breadcrumbs.clearfix
-    h4= title.description
-    ul.breadcrumb
-        li
-            a(href="#") Главная
-        li.active= title.description
+    .middle-block
+        h4= title.description
+        ul.breadcrumb
+            li
+                a(href="#") Главная
+            li
+                a(href="#")= title.description
+    .middle-block.text-right
+        a.btn.btn-orange.btn-md(href="#")
+            i.fa.fa-code
+            |  Режим разработчика

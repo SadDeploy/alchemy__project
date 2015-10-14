@@ -1,15 +1,74 @@
 aside.page-sidebar-wrapper
-    .page-sidebar.navbar-collapse.collapse
+    .page-sidebar
         nav.navbar(role='navigation')
             .logo.text-center
-                img(src="images/logo.png", alt="logo")
+                a(href="#")
+                    img(src="images/logo.png", alt="Alchemy")
             ul.nav.navbar-nav.nav-stacked
                 li
-                    a(href='#') Основная панель
+                    a(href='javascript:;')
+                        i.fa.fa-home.fa-lg
+                        | Основная панель
+                li.has-sub
+                    a(href='javascript:;')
+                        i.fa.fa-file.fa-lg
+                        | Контент
+                        span.arrow
+                    ul.sub.list-unstyled
+                        li
+                            a(href='#') Товары
+                        li
+                            a(href='#') Связи товаров
+                        li
+                            a(href='#') Динамические характеристики
+                        li
+                            a(href='#') Справочники
+                li.has-sub
+                    a(href='javascript:;')
+                        i.fa.fa-cubes.fa-lg
+                        | Каталог
+                        span.arrow
+                    ul.sub.list-unstyled
+                        li
+                            a(href='#') Товары
+                        li
+                            a(href='#') Связи товаров
+                        li
+                            a(href='#') Динамические характеристики
+                        li
+                            a(href='#') Справочники
+                li.has-sub
+                    a(href='javascript:;')
+                        i.fa.fa-lg.fa-shopping-cart
+                        | Интернет-магазин
+                        span.arrow
+                    ul.sub.list-unstyled
+                        li
+                            a(href='#') Товары
+                        li
+                            a(href='#') Связи товаров
+                        li
+                            a(href='#') Динамические характеристики
+                        li
+                            a(href='#') Справочники
+                li.has-sub
+                    a(href='javascript:;')
+                        i.fa.fa-cogs.fa-lg
+                        | Настройки
+                        span.arrow
+                    ul.sub.list-unstyled
+                        li
+                            a(href='#') Товары
+                        li
+                            a(href='#') Связи товаров
+                        li
+                            a(href='#') Динамические характеристики
+                        li
+                            a(href='#') Справочники
                 li
-                    a(href='#') Контент
-                li
-                    a(href='#') Каталог
+                    a(href='javascript:;')
+                        i.fa.fa-folder-open.fa-lg
+                        | Файл-менеджер
         .copy.text-center
-            p Разработано в&nbsp;
-                a(href="http://www.alkodesign.ru", target="_blanc") AlkoDesign
+            p.text-info Разработано в&nbsp;
+                a.text-info(href="http://www.alkodesign.ru", target="_blank") AlkoDesign

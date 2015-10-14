@@ -1,7 +1,92 @@
 //
 // Partials -> Sidebar
 // ------------------------------------
-
+aside {
+  position: fixed;
+  .fa {
+    position: absolute;
+    left: 25px;
+    top: 38%;
+  }
+  .nav > li > a {
+    padding-left: 63px;
+  }
+}
+.sidebar-toggler.active i {
+  @include css3-prefix('transform', rotate(90deg));
+  @include transition();
+}
 .logo {
   padding: 20px 0;
+}
+.copy {
+  a {
+    position: relative;
+    &:before {
+      content: '';
+      background: url("../images/alkodesign.png") no-repeat center;
+      width: 41px;
+      height: 22px;
+      position: absolute;
+      top: -25px;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+  }
+}
+
+.has-sub {
+  .arrow {
+    font-family: FontAwesome;
+    font-weight: 300;
+    font-size: 16px;
+    float: right;
+    margin-top: 1px;
+    margin-right: 5px;
+    display: inline;
+    height: auto;
+    &:before {
+      content: "\f104";
+    }
+    &.open:before {
+      content: "\f107";
+    }
+  }
+  .sub {
+    display: none;
+    a {
+      display: block;
+      padding: 13px 63px;
+      color: $lighter;
+      text-decoration: none;
+      line-height: 1.2;
+      &:hover {
+        background: #0c1122;
+      }
+    }
+  }
+}
+
+@media (max-height: 660px) {
+  aside {position: relative;}
+}
+@media (max-width: 1140px) {
+  aside {position: relative;}
+  .page-content-wrapper {
+    .page-content {margin-left: 0;}
+  }
+  .page-sidebar-wrapper {
+    .page-sidebar {
+      width: 100%;
+      float: none;
+      margin-right: 0;
+      min-height: inherit;
+      .page-sidebar-closed & {
+        max-height: 0;
+        padding-bottom: 0;
+        overflow: hidden;
+      }
+    }
+  }
 }
