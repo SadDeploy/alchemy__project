@@ -4,6 +4,7 @@
   "dependencies": {
     "jquery": "~2.1.3",
     "bootstrap-sass": "~3.3.5",
-    "font-awesome": "~4.4.0"
+    "font-awesome": "~4.4.0",
+    "SelectOrDie": "~0.1.8"
   }
 }

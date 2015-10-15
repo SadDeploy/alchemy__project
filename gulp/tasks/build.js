@@ -45,6 +45,7 @@ gulp.task('build', 'Build project (use with --force to force build)', function(c
     ['images', 'copy', 'extras'],
     'useref',
     'buildSize',
+    'uncss',
     function() {
       notifier.notify({
         title: 'Build',

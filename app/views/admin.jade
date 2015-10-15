@@ -1,0 +1,31 @@
+extends layouts/_default-admin
+
+block content
+    .admin__bar
+        .admin__bar-inner.text-center
+            form
+                .middle-block
+                    img(src="images/logo.png", alt="Logo")
+                .middle-block
+                    .form__element
+                        .form-group.margtop10
+                            input.form-control(type="text", placeholder="Логин")
+                        .form-group
+                            input.form-control(type="password", placeholder="Пароль")
+                        .form-group
+                            button.btn.btn-blue.btn-block Войти
+                        .form-group
+                            .pass_remember
+                                a(href="#") Забыли пароль?
+                                i.fa.fa-angle-down
+            .admin__bar-inner-password.text-left
+                form
+                    h4 Восстановление пароля
+                    .text-center
+                        .form-group.col-xs-1
+                        .form-group.col-xs-5
+                            .row
+                                input.form-control(type="email", placeholder="E-mail")
+                        .form-group.col-xs-5
+                            button.btn.btn-blue.btn-block Отправить
+                        .clearfix

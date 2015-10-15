@@ -6,7 +6,7 @@
 .page-content-wrapper {
   float: left;
   width: 100%;
-  min-width: 1140px;
+  //min-width: 1140px;
   .page-content {
     margin-left: 250px;
     background-color: $lighter;
@@ -44,3 +44,37 @@
     }
   }
 }
+
+.admin__bar {
+}
+  .admin__bar-inner {
+    background-color: $brand;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 500px;
+    height: 250px;
+    padding: 21px 0;
+    i.active:before {
+      content: '\f106';
+      color: $lighter;
+    }
+  }
+    .form__element {
+      padding: 22px 44px 0;
+      border-left: 1px solid #525a71;
+    }
+    .pass_remember {
+      color: #9499a7;
+      cursor: pointer;
+      a {color: #6478aa;margin-right: 16px;}
+    }
+  .admin__bar-inner-password {
+    display: none;
+    background-color: #151d32;
+    padding: 10px 20px;
+    h4 {color: #adb4c5;}
+  }

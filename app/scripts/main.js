@@ -21,16 +21,17 @@ $(window).load(function() {
 /*
     function showMenu() {
         var screen_width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0)
-        if (screen_width >= 1140) {
+        if (screen_width >= 991) {
             $('body').removeClass('page-sidebar-closed');
         }
-        if (screen_width <= 1139) {
+        if (screen_width <= 990) {
             $('body').addClass('page-sidebar-closed');
         }
     }
     $(window).resize(function(){
         showMenu();
-    });*/
+    });
+*/
 
 // sidebar show/hide
     $('body').on('click', '.sidebar-toggler', function (e) {
@@ -71,5 +72,14 @@ $(window).load(function() {
         };
     });
 
+// admin-bar
+    $('.pass_remember').click(function() {
+        $('.admin__bar-inner-password').slideToggle();
+        $(this).find('i').toggleClass('active');
+    });
 
+// select
+    if ($("select").length) {
+        $('select').selectOrDie({});
+    }
 });

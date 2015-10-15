@@ -7,7 +7,7 @@ doctype html
 <!--[if !IE] <![IGNORE[--><!--[IGNORE[]]--> <html class="no-js noie">
 
 include ../mixins/_mixin
-- var title = { description: 'Главная' }
+- var title = { description: 'Админка' }
 
 head
     meta(charset="utf-8")
@@ -26,13 +26,10 @@ head
     link(rel="stylesheet", href="styles/main.css")
     // endbuild
 
-body.inner-body.page-sidebar-closed
+body
 
-    include ../modules/_sidebar
-
-    main.page-content-wrapper
-        .page-content
-            block content
+    main
+        block content
 
     // build:js(./app/) scripts/vendor.js
     // bower:

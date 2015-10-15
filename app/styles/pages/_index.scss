@@ -25,6 +25,9 @@ table {
   .sorting_desc {
     background: url('../images/sort_desc.png') no-repeat top 10px right 5px;
   }
+  > tbody > tr > td.table-btn {
+    padding: 8px 2px;
+  }
 }
 .panel {
   display: block;

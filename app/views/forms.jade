@@ -7,13 +7,12 @@ block content
     include modules/_header
     include modules/_breadcrumbs
     #main
-        .text-right
+        .col-xs-12.text-right
             ul.list-inline
                 li
                     a(href="#").btn.btn-lilac
                         i.fa.fa-sitemap
                         |  Список
-                li
                 li
                     a(href="#").btn.btn-primary
                         i.fa.fa-sitemap
@@ -28,7 +27,7 @@ block content
                         |  Удалить
         .col-xs-12
             form
-                table.table.table-striped
+                table.table.table-striped.table-editing
                     thead
                         tr
                             th &nbsp;
@@ -48,7 +47,14 @@ block content
                                 input.form-control.form-control-third(type="text")
                         tr
                             td Опубликовано
-                            td Главная  / Текстовые места / Место 1 / Редактировать
+                            td
+                                .form-control-third
+                                    select.form-control
+                                        option test
+                                        option test
+                                        option test
+                                        option test
+                                        option test
                         tr
                             td Родительская страница
                             td Главная  / Текстовые места / Место 1 / Редактировать
@@ -78,7 +84,7 @@ block content
                                 button.btn.btn-primary
                                     i.fa.fa-check-circle-o
                                     |  Применить
-                                button.btn.btn-default
+                                button.btn.btn-gray
                                     i.fa.fa-times-circle-o
                                     |  Отмена
         .clearfix
